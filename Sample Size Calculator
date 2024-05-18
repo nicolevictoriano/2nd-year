@@ -1,3 +1,5 @@
+#@authors: Rizalyn Aproda, Joshua Baquiran, Nicole Dacillo, Jezreel Gadiano, Dariel Militante, & Nicole Victoriano
+
 import pandas as pd
 import math
 import numpy as np

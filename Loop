@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	string uname, pword, loop;
+	float n1, n2, n3, n4, n5, sum=0, diff=0, quotient=0, product=0;
+	
+	cout<<"Welcome!\n\n";
+	cout<<"Please type your username: ";
+	cin>>uname;
+	cout<<"Please type your password: ";
+	cin>>pword;
+	
+	if(uname=="admin10" && pword=="admin12345"){cout<<"\nYou have successfully logged in!\n\n";
+	
+		while(uname=="admin10" && pword=="admin12345")
+		{cout<<"Please type the first number: ";
+		cin>>n1;
+		cout<<"\nPlease type the second number: ";
+		cin>>n2;	
+		cout<<"\nPlease type the third number: ";
+		cin>>n3;	
+		cout<<"\nPlease type the fourth number: ";
+		cin>>n4;
+		cout<<"\nPlease type the fifth number: ";
+		cin>>n5;
+		
+		sum=n1+n2+n3+n4+n5;
+		diff=n1-n2-n3-n4-n5;
+		product=n1*n2*n3*n4*n5;
+		quotient=n1/n2/n3/n4/n5;
+		
+		cout<<"\nThe sum of the numbers is "<<sum;
+		cout<<"\nThe difference of the numbers is "<<diff;
+		cout<<"\nThe product of the numbers is "<<product;
+		cout<<"\nThe quotient of the numbers is "<<quotient;
+		
+		cout<<"\n\nDo you wish to try again? (yes or no) ";
+		cin>>loop;
+		if(loop=="no"){
+		break;
+		}
+		
+		}	
+	}
+		else{cout<<"\nInvalid login, please try again";
+		}
+	
+	return 0;	
+}

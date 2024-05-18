@@ -1,0 +1,75 @@
+#include<iostream>
+using namespace std;
+int main ()
+
+{
+	string inans1, ans1="TOKYO", inans3, ans3="KID";
+	int score=0, finalscore, ans2, ans4, ans5;
+	
+	cout<<"Welcome! \nPlease answer the following questions using CAPITAL letters. ";
+	cout<<"\n\n1. What is the capital of Japan? ";
+	cin>>inans1;
+	
+	if(inans1==ans1){
+	finalscore=score+1;
+	cout<<"The answer is correct!";
+	}
+	
+	else{cout<<"You entered the wrong answer.";
+	}
+	
+	cout<<"\n\n2. Solve 9x9. ";
+	cin>>ans2;
+	
+	if(ans2==81){
+	finalscore=finalscore+1;
+	cout<<"The answer is correct!";
+	}
+	
+	else{cout<<"You entered the wrong answer.";
+	}
+	
+	cout<<"\n\n3. What is a baby goat called? ";
+	cin>>inans3;
+	
+	if(inans3==ans3){
+	finalscore=finalscore+1;
+	cout<<"The answer is correct!";
+	}
+	
+	else{cout<<"You entered the wrong answer.";
+	}
+	
+	cout<<"\n\n4. Solve for x. \n3x = 9 ";
+	cin>>ans4;
+	
+	if(ans4==3){
+	finalscore=finalscore+1;
+	cout<<"The answer is correct!";
+	}
+	
+	else{cout<<"You entered the wrong answer.";
+	}
+	
+	cout<<"\n\n5. How many hearts do octupuses have? (Please type your answer in figure/s) ";
+	cin>>ans5;
+	
+	if(ans5==3){
+	finalscore=finalscore+1;
+	cout<<"The answer is correct!";
+	}
+	
+	else{cout<<"You entered the wrong answer.";
+	}
+	
+	if(finalscore==0){cout<<"\n\nNice try! ";
+	}
+	
+	else{cout<<"\n\nCongratulations!";
+	}
+	
+	cout<<"\nYou got "<<finalscore<<" out of 5.";
+	cout<<"\nThanks for participating!";
+	
+	return 0;
+}

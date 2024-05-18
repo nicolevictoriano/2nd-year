@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+int main ()
+
+{
+	float n1, n2, n3;
+	
+	cout<<"Please type your amount of purchase ";
+	cin>>n1;
+	
+	if(n1>=0 && n1<=1000){n2=n1*0.05;
+	n3=n1-n2;
+	}
+	
+	else if(n1>=1001 && n1<=4999){n2=n1*0.10;
+	n3=n1-n2;
+	}
+	else if(n1>=5000){n2=n1*0.15;
+	n3=n1-n2;
+	}
+	
+	cout<<"The discounted amount is "<<n2;
+	cout<<"\nThe net payable is "<<n3;
+	
+	return 0;
+}
+

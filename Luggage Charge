@@ -1,0 +1,19 @@
+#include<iostream>
+using namespace std;
+int main ()
+{
+
+int n1;
+
+cout<<"How many pounds does your suitcase weigh? ";
+cin>>n1;
+
+if(n1>50){cout<<"There is a $25 charge for the luggage that is heavy";
+
+}
+
+cout<<"\nThank you for your business.";
+
+return 0;
+}
+
